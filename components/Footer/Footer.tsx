@@ -1,14 +1,8 @@
-import Link from "next/link";
-
 function Footer() {
     return (
-        <nav>
-            <div>
-                <Link href="/">Home</Link>
-                <Link href="/about">About</Link>
-                <Link href="/contact">Contact</Link>
-            </div>
-        </nav>
+        <footer className="bg-gradient-to-r from-[#07486e] to-[#0077ab] drop-shadow-md text-center text-md text-white p-5">
+            © {new Date().getFullYear()} CITE Technical Institute Inc. All rights reserved.
+        </footer>
     );
 }
 

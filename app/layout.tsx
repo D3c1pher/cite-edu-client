@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Navbar from "@/components/Navbar/Navbar";
+import {Footer, Navbar} from "@/components";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -17,6 +17,7 @@ function RootLayout({
       <body className="overflow-x-hidden overflow-y-scroll">
         <Navbar />
         <div>{children}</div>
+        <Footer />
       </body>
     </html>
   )
