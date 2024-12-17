@@ -3,7 +3,10 @@ import {Footer, Navbar} from "@/components";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "CITE Technical Institute Inc.",
+  title: {
+    template: "CITE Technical Institute Inc. | %s",
+    default: "CITE Technical Institute Inc."
+  },
   description: "Providing opportunities to the less privileged youth.",
 };
 
